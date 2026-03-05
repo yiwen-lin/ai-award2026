@@ -9581,6 +9581,8 @@ short code
   background-image: url(../img/bg/announce.jpg);
   background-size:cover;
   background-position: right;
+  padding-right: var(--bs-gutter-x, 1rem);
+  padding-left: var(--bs-gutter-x, 1rem);
 }
 .speaeker-v1-wrapper {
   display: grid;
@@ -9599,7 +9601,7 @@ short code
 .single-speaeker-wrap {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  align-items: center;
+  align-items: flex-start;
 }
 .single-speaeker {
   text-align: center;
@@ -9763,7 +9765,7 @@ short code
   .single-speaeker-wrap {
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
+    align-items: flex-start;
   }
   .single-speaeker-wrap .speaker-details-v1-profile-content h4 {
     text-align: left;
@@ -14600,9 +14602,9 @@ body {
 
 .gift{
   padding-top: 150px;
-  padding-bottom: 150px;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  /* padding-bottom: 150px; */
+  /* padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem); */
 }
 
 .giftTitle{
@@ -14773,8 +14775,8 @@ body {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #eee;
-  padding-right: var(--bs-gutter-x, 0.75rem);
-  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-right: var(--bs-gutter-x, 1.25rem);
+  padding-left: var(--bs-gutter-x, 1.25rem);
 }
 
 .innerLogo{
