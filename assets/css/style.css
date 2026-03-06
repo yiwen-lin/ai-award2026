@@ -14602,7 +14602,7 @@ body {
 
 .gift{
   padding-top: 150px;
-  /* padding-bottom: 150px; */
+  padding-bottom: 150px;
   /* padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem); */
 }
