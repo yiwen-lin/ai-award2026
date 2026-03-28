@@ -47,9 +47,11 @@
       const menu_new = document.querySelector('.menu_new');
       const forPcMenuLi = document.querySelectorAll('.forPcMenu li a');
       const menu_newLi = document.querySelectorAll('.menu_new li a')
+      const hh1 = document.querySelector('.header-general')
 
       burger.addEventListener('click', () => {
         forPcMenu.classList.toggle('forPcMenuShow')
+        hh1.classList.toggle('header-general-scroll-show')
         menu_new.classList.toggle('menu_newShow')
 
         if (forPcMenu.classList.contains('forPcMenuShow')) {

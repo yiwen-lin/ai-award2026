@@ -8015,7 +8015,17 @@ short code
   transition: 0.5s all;
 }
 
+@media screen and (max-width: 575px) {
+  .header-general {
+    background-color: var(--white-bg);
+  }
+}
+
 .header-general-scroll{
+  background-color: var(--white-bg);
+}
+
+.header-general-scroll-show{
   background-color: var(--white-bg);
 }
 .header-general .header-general-wrapper .logo {
@@ -14403,7 +14413,7 @@ ol.ol-number li {
   background-color: #fff;
   left:0;
   top:75px;
-  z-index: 3;
+  z-index: 4;
   display: none;
 }
 .forPcMenuShow{
@@ -14865,8 +14875,8 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .KV_title{
-    margin-top: 20px;
+  .home_new{
+    margin-top: 67px;
   }
 }
 
