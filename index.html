@@ -1,5 +1,3 @@
-
-
 <!-- Header Link -->
 <!DOCTYPE html>
 <html lang="zh-Hant-TW" data-theme="light">
@@ -74,6 +72,27 @@
           burger.classList.remove('burgerClose')
         });
       }
+
+      const KV_date = document.querySelector('.KV_date')
+      const KV_title = document.querySelector('.KV_title')
+      const KV_bg = document.querySelector('.KV_bg')
+      const KV_decotxt = document.querySelector('.KV_decotxt')
+
+      setTimeout(() => {
+        KV_bg.classList.remove('kv_opa')
+      }, 500)
+
+      setTimeout(() => {
+        KV_decotxt.classList.remove('kv_opa')
+      }, 1000)
+
+      setTimeout(() => {
+        KV_title.classList.remove('kv_opa')
+      }, 1500)
+
+      setTimeout(() => {
+        KV_date.classList.remove('kv_opa')
+      }, 1500)
     })
   </script>
 </head>
@@ -248,7 +267,8 @@
               <li class="onlyStyle">
                 <!-- <a target="https://drive.google.com/drive/folders/1OgX7KhaVK5ORI-tcr2Gs7RHpNkr3uHg4?usp=sharing">報名投稿</a></li> -->
               <li class="onlyStyle2">
-                <a href="https://drive.google.com/drive/folders/1OgX7KhaVK5ORI-tcr2Gs7RHpNkr3uHg4?usp=sharing" target="_blank">報名投稿</a>
+                <a href="https://drive.google.com/drive/folders/1OgX7KhaVK5ORI-tcr2Gs7RHpNkr3uHg4?usp=sharing"
+                  target="_blank">報名投稿</a>
               </li>
               <li class="forMobile"><a href="#home">頁首</a></li>
               <li class="forMobile"><a href="#aihia">獎項介紹</a></li>
@@ -274,12 +294,10 @@
   <!-- Header End Here -->
   <!-- Hompage-v1-Hero Area Start Here -->
   <section class="home_new" id="home">
-    <div class="videoContainer">
-      <video autoplay loop muted playsinline>
-        <source src="./img/kv.mp4" />
-      </video>
-    </div>
-    <img class="kvTitle" src="./img/kvTitle.png" />
+    <img src="./img/2026_kv/KV_date.png" class="KV_date kv_opa" />
+    <img src="./img/2026_kv/KV_title.png" class="KV_title kv_opa" />
+    <img src="./img/2026_kv/KV_bg.jpg" class="KV_bg kv_opa" />
+    <img src="./img/2026_kv/KV_decotxt.png" class="KV_decotxt kv_opa" />
   </section>
   <!-- Hompage-v1-Hero Area End Here -->
 
@@ -410,7 +428,7 @@
                 <img src="assets/img/icon/award1.png" alt="speaeker">
               </div>
             </div>
-          </div>      
+          </div>
           <div class="speaker-details-v1-profile-content">
             <div class="mb-20">
               <h4>1、風險評估類</h4>
@@ -477,7 +495,7 @@
 
       </div>
     </div>
-  </div>
+    </div>
   </section>
   <!-- Speaker V1 Area End Here -->
 
@@ -871,7 +889,7 @@
             <h4>杜維洲</h4>
             <span>台大人工智慧研究中心</span>
             <span>執行長</span>
-          </div>     
+          </div>
         </div>
         <!-- <div class="single-speaeker single-speaeker2 single-speaekerAll" data-aos="fade-right">
           <div class="speaeker-thumb">
@@ -947,16 +965,14 @@
 
       <div class="reportBlockArticle">
         <div class="p">
-          <div class="demoCon"><img src="https://images.storm.mg/cloud/878bef1c0b8e82cb94c574107008ea1c768fead6.webp?url=s3%3A%2F%2Fnew-storm-public-resource%2Fgallery%2F2079065%2FcVlF9GWqL9OwGEIBwcsEX8oLmMeywACEBq4CJHXe.jpg&g=sm&h=675&resize=fill&w=1200&format=webp" alt="" /></div>
+          <div class="demoCon"><img
+              src="https://images.storm.mg/cloud/878bef1c0b8e82cb94c574107008ea1c768fead6.webp?url=s3%3A%2F%2Fnew-storm-public-resource%2Fgallery%2F2079065%2FcVlF9GWqL9OwGEIBwcsEX8oLmMeywACEBq4CJHXe.jpg&g=sm&h=675&resize=fill&w=1200&format=webp"
+              alt="" /></div>
           <!-- <div class="other allNoto">2025獲獎名單</div> -->
           <div class="aTitle">
             風傳媒2025 AI醫療領航大獎公布！預防、治療、整合卓越創新引領未來
           </div>
-          <a
-            href="https://www.storm.mg/article/11064646"
-            target="_blank"
-            class="readMore allNoto"
-          >
+          <a href="https://www.storm.mg/article/11064646" target="_blank" class="readMore allNoto">
             <div>
               <span class="allNoto">READ MORE</span>
             </div>
@@ -964,16 +980,14 @@
           </a>
         </div>
         <div class="p">
-          <div class="demoCon"><img src="https://images.storm.mg/cloud/bef20e3c9a2c65f69114f61c6b80ebeb00b6eaa2.webp?url=s3%3A%2F%2Fnew-storm-public-resource%2Fgallery%2F2042116%2F20250422-040137_U18440_M1049023_78fa.jpg&g=no&h=675&resize=fill&w=1200&format=webp" alt="" /></div>
+          <div class="demoCon"><img
+              src="https://images.storm.mg/cloud/bef20e3c9a2c65f69114f61c6b80ebeb00b6eaa2.webp?url=s3%3A%2F%2Fnew-storm-public-resource%2Fgallery%2F2042116%2F20250422-040137_U18440_M1049023_78fa.jpg&g=no&h=675&resize=fill&w=1200&format=webp"
+              alt="" /></div>
           <!-- <div class="other allNoto">2025整合醫療大獎</div> -->
           <div class="aTitle">
             AI醫療》產學合作AI辨別骨折新舊傷高準高效　雲科大及大林慈濟登上國際期刊
           </div>
-          <a
-            href="https://www.storm.mg/article/11043633"
-            target="_blank"
-            class="readMore allNoto"
-          >
+          <a href="https://www.storm.mg/article/11043633" target="_blank" class="readMore allNoto">
             <div>
               <span class="allNoto">READ MORE</span>
             </div>
@@ -986,11 +1000,7 @@
           <div class="aTitle">
             AI生成式護理記錄系統　助台南新樓醫院把護理人員留下來
           </div>
-          <a
-            href="https://new7.storm.mg/article/5439225"
-            target="_blank"
-            class="readMore allNoto"
-          >
+          <a href="https://new7.storm.mg/article/5439225" target="_blank" class="readMore allNoto">
             <div>
               <span class="allNoto">READ MORE</span>
             </div>
@@ -999,16 +1009,14 @@
         </div>
 
         <div class="p">
-          <div class="demoCon"><img src="https://images.storm.mg/cloud/d26ee1f6fd294c73e80b6a9ce7a6fd3dca2780a9.webp?url=s3%3A%2F%2Fnew-storm-public-resource%2Fgallery%2F2103613%2FLmydsDJCnQ8rjWt7ngnykCVeqSejPWwUO0zx22bf.jpg&g=ce&h=675&resize=fill&w=1200&format=webp" alt="" /></div>
+          <div class="demoCon"><img
+              src="https://images.storm.mg/cloud/d26ee1f6fd294c73e80b6a9ce7a6fd3dca2780a9.webp?url=s3%3A%2F%2Fnew-storm-public-resource%2Fgallery%2F2103613%2FLmydsDJCnQ8rjWt7ngnykCVeqSejPWwUO0zx22bf.jpg&g=ce&h=675&resize=fill&w=1200&format=webp"
+              alt="" /></div>
           <!-- <div class="other allNoto">2025整合醫療大獎</div> -->
           <div class="aTitle">
             馬偕醫院導入「藥錠AI辨識機」　200顆藥錠只需2秒辨識
           </div>
-          <a
-            href="https://www.storm.mg/article/11085933"
-            target="_blank"
-            class="readMore allNoto"
-          >
+          <a href="https://www.storm.mg/article/11085933" target="_blank" class="readMore allNoto">
             <div>
               <span class="allNoto">READ MORE</span>
             </div>
@@ -1016,16 +1024,14 @@
           </a>
         </div>
         <div class="p">
-          <div class="demoCon"><img src="https://images.storm.mg/cloud/322a60873e1e39f519c92db6867d811077eccea2.webp?url=s3%3A%2F%2Fnew-storm-public-resource%2Fgallery%2F1454262%2F20200413-104046_U12879_M604703_d8e1.jpeg&g=sm&h=675&resize=fill&w=1200&wm_opacity=1&wm_position=soea&wm_scale=0.2&wm_x=26&wm_y=26&wmu=https%3A%2F%2Fimage.cache.storm.mg%2Flogo%2Flogo_white.svg&format=webp" alt="" /></div>
+          <div class="demoCon"><img
+              src="https://images.storm.mg/cloud/322a60873e1e39f519c92db6867d811077eccea2.webp?url=s3%3A%2F%2Fnew-storm-public-resource%2Fgallery%2F1454262%2F20200413-104046_U12879_M604703_d8e1.jpeg&g=sm&h=675&resize=fill&w=1200&wm_opacity=1&wm_position=soea&wm_scale=0.2&wm_x=26&wm_y=26&wmu=https%3A%2F%2Fimage.cache.storm.mg%2Flogo%2Flogo_white.svg&format=webp"
+              alt="" /></div>
           <!-- <div class="other allNoto">2025整合醫療大獎</div> -->
           <div class="aTitle">
             台大醫院再寫里程碑！李建璋教授領軍　「AI輔助細菌抗藥性預測」奪國際首獎
           </div>
-          <a
-            href="https://www.storm.mg/article/11079228"
-            target="_blank"
-            class="readMore allNoto"
-          >
+          <a href="https://www.storm.mg/article/11079228" target="_blank" class="readMore allNoto">
             <div>
               <span class="allNoto">READ MORE</span>
             </div>
@@ -1033,16 +1039,14 @@
           </a>
         </div>
         <div class="p">
-          <div class="demoCon"><img src="https://images.storm.mg/cloud/80752c3113e9931d2f016ef5d121f2cc5ee65e8a.webp?url=s3%3A%2F%2Fnew-storm-public-resource%2Fgallery%2F2062049%2Fp9eVfMV04N95lPMBCN4Gxs3eaNW9A2Ea6HuT8nPj.webp&g=so&h=675&resize=fill&w=1200&format=webp" alt="" /></div>
+          <div class="demoCon"><img
+              src="https://images.storm.mg/cloud/80752c3113e9931d2f016ef5d121f2cc5ee65e8a.webp?url=s3%3A%2F%2Fnew-storm-public-resource%2Fgallery%2F2062049%2Fp9eVfMV04N95lPMBCN4Gxs3eaNW9A2Ea6HuT8nPj.webp&g=so&h=675&resize=fill&w=1200&format=webp"
+              alt="" /></div>
           <!-- <div class="other allNoto">2025整合醫療大獎</div> -->
           <div class="aTitle">
             台灣智慧醫療學校成立！線上AI醫療大數據課程　衛福部盼加速跨域人才養成
           </div>
-          <a
-            href="https://www.storm.mg/article/11079205"
-            target="_blank"
-            class="readMore allNoto"
-          >
+          <a href="https://www.storm.mg/article/11079205" target="_blank" class="readMore allNoto">
             <div>
               <span class="allNoto">READ MORE</span>
             </div>
@@ -1051,7 +1055,7 @@
         </div>
 
       </div>
-  
+
     </div>
   </section>
 
@@ -1395,7 +1399,7 @@
   </section>
 
 
-  
+
   <div class="home-v1-sponsor-slider-area py-100 py-lg-70 py-md-50" style="display: none;">
     <div class="shape">
       <img src="assets/img/shape/home-v1-sponsor-shape.png" alt="shape" />
@@ -1485,16 +1489,17 @@
       <div class="gLogo">
         <div class="logoTitle">贊助單位</div>
         <div class="allLogos">
-            <a href="https://www.beurer.com.tw/" target="_blank">
+          <a href="https://www.beurer.com.tw/" target="_blank">
             <img src="./img/l5.png" class="l5" />
           </a>
-          <a href="https://www.tokuyo.com.tw/?lang=zh-TW&srsltid=AfmBOoqdi6TPNmg27upDETgrTXHrqc2EUnSuBPGErLdIaSXET3NMK0dW" target="_blank">
+          <a href="https://www.tokuyo.com.tw/?lang=zh-TW&srsltid=AfmBOoqdi6TPNmg27upDETgrTXHrqc2EUnSuBPGErLdIaSXET3NMK0dW"
+            target="_blank">
             <img src="./img/l6.png" class="l6" />
           </a>
           <a href="https://electronics.chimei.com.tw/" target="_blank">
             <img src="./img/l7.png" class="l7" />
           </a>
-          <a href=""_blank">
+          <a href="" _blank">
             <img src="./img/l8.png" class="l8" />
           </a>
         </div>
@@ -1518,6 +1523,17 @@
     </div>
     </div>
   </footer>
+  <script>
+    const hh = document.querySelector('.header-general');
+
+    window.addEventListener('scroll', () => {
+      if ((window.innerWidth > 768 ? window.scrollY > window.innerHeight : window.scrollY > 200)) {
+        hh.classList.add('header-general-scroll')
+      } else {
+        hh.classList.remove('header-general-scroll')
+      }
+    })
+  </script>
   <script src="assets/js/app.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script>
