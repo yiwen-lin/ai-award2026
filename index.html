@@ -296,9 +296,18 @@
   <!-- Header End Here -->
   <!-- Hompage-v1-Hero Area Start Here -->
   <section class="home_new" id="home">
-    <img src="./img/2026_kv/KV_date.png" class="KV_date kv_opa" />
-    <img src="./img/2026_kv/KV_title.png" class="KV_title kv_opa" />
-    <img src="./img/2026_kv/KV_bg.jpg" class="KV_bg kv_opa" />
+    <picture>
+      <source media="(max-width: 767px)" srcset="./img/2026_kv/KV_title-mb.png">
+      <img src="./img/2026_kv/KV_title.png" class="KV_title kv_opa">
+    </picture>
+    <picture class="KV_dateWrap">
+      <source media="(max-width: 767px)" srcset="./img/2026_kv/KV_date-mb.png">
+      <img src="./img/2026_kv/KV_date.png" class="KV_date kv_opa" />
+    </picture>
+    <picture class="KV_bgWrap">
+      <source media="(max-width: 767px)" srcset="./img/2026_kv/KV_bg-mb.jpg">
+      <img src="./img/2026_kv/KV_bg.jpg" class="KV_bg kv_opa" />
+    </picture>
     <img src="./img/2026_kv/KV_decotxt.png" class="KV_decotxt kv_opa" />
   </section>
   <!-- Hompage-v1-Hero Area End Here -->
@@ -1490,7 +1499,7 @@
       </div>
 
     </div>
-    <div class="innerLogo innerLogoTop">
+    <!-- <div class="innerLogo innerLogoTop">
       <div class="gLogo">
         <div class="logoTitle">贊助單位</div>
         <div class="allLogos">
@@ -1509,7 +1518,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
   <footer class="primary-footer-area py-50 py-md-40 bg-dark">
     <div class="container">
