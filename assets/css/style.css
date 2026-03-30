@@ -14433,7 +14433,7 @@ ol.ol-number li {
 
 .home_new{
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .kvTitle{
   width: 100%;
