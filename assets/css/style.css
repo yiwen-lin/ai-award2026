@@ -14840,14 +14840,21 @@ body {
 }
 
 .l5{
-  width: 95px;
+  width: 90px;
 }
 .l6{
-  width: 110px;
+  width: 140px;
 }
 .l7{
   width: 90px;
 }
+.l8{
+  width: 175px;
+}
+.l10{
+  width: 130px;
+}
+
 
 /*2026 KV*/
 .KV_bg,.KV_decotxt,.KV_title,.KV_date{
