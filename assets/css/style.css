@@ -211,7 +211,7 @@ short code
   --primary-bg: #296678;
   --radical-red-bg: #E5926E;
   --warning-bg: #EAD5D0;
-  --sky-blue-bg: #00c2ff;
+  --sky-blue-bg: #0ed6be;
   --w-light: #fafafa;
   --dark-btn-hvr-bg: #031120;
   --general-search-input-bg: rgba(255, 255, 255, 0.2);
@@ -14404,7 +14404,7 @@ ol.ol-number li {
   padding: 6px 15px;
 }
 .onlyStyle2 a:hover{
-  background-color: var(--radical-red-bg);
+  background-color: var(--sky-blue-bg);
 }
 .forPcMenu{
   position: fixed;
@@ -14764,7 +14764,7 @@ body {
 }
 
 .steps li a:hover{
-  background-color: var(--radical-red-bg);
+  background-color: var(--sky-blue-bg);
   color: #1f1f1f;
 }
 
