@@ -14883,7 +14883,7 @@ body {
   transform-origin: 20vw 28vh;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   .home_new{
     margin-top: 0;
     height: 100vh;
@@ -14892,6 +14892,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     overflow: hidden;
+    height: 100svh; /* RWD: 扣掉手機瀏覽器網址列，避免 KV 底部被切 */
   }
 
   /* 手機版隱藏裝飾文字 */
@@ -14956,4 +14957,118 @@ body {
   to{
     transform: scale(1);
   }
+}
+
+/* ===== RWD 微調 2026-10 ===== */
+@media screen and (max-width: 1024px) and (min-width: 768px) and (orientation: portrait) {
+  /* 平板直式改用手機版 KV，限制標題寬度避免過大 */
+  .KV_title{
+    width: min(85vw, 640px);
+  }
+  .KV_dateWrap,
+  .KV_date{
+    width: min(65vw, 480px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* 抽獎禮品：992~1230px 維持三欄（原本會掉成兩欄並留大片空白） */
+  .bigGift2{
+    width: calc((100% - 60px) / 3);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* 抽獎禮品：平板改兩欄，避免單欄留白過多 */
+  .smallGiftCon{
+    gap: 40px 20px;
+  }
+  .bigGift2{
+    width: calc((100% - 20px) / 2);
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gift{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .giftTitle{
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .giftTitleTop{
+    padding-top: 80px;
+  }
+  .steps{
+    margin-top: 80px;
+  }
+  .smallGiftCon{
+    gap: 32px 12px;
+  }
+  .bigGift2{
+    width: calc((100% - 12px) / 2);
+  }
+  .gift1Name{
+    font-size: 15px;
+    line-height: 1.4;
+  }
+  .otherInfoGift1{
+    font-size: 13px;
+    gap: 2px 10px;
+    flex-wrap: wrap;
+  }
+}
+
+/* #aihia 獎項說明：平板單欄時文字區塊置中（原本保留桌機的 margin-left:70px，整塊往右偏） */
+@media screen and (max-width: 991px) {
+  #aihia .single-speaeker-wrap .speaker-details-v1-profile-content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 640px;
+  }
+}
+
+/* 評審團：手機改兩欄 */
+@media screen and (max-width: 575px) {
+  #review .speaeker-v1-wrapper{
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 12px;
+    max-width: none;
+    padding: 0;
+  }
+  #review .speaeker-v1-wrapper .single-speaeker{
+    width: 100%;
+    margin: 0 auto;
+    align-self: start; /* 同排頭像頂端對齊 */
+  }
+  #review .speaeker-thumb{
+    padding: 0 0 4px;
+  }
+  #review .speaeker-thumb .thumb{
+    width: 120px;
+    height: 120px;
+    max-width: 100%;
+  }
+  #review .speaeker-title{
+    margin-top: 10px;
+  }
+  #review .speaeker-title h4{
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  #review .speaeker-title span{
+    font-size: 13px;
+    line-height: 1.4;
+    margin-top: 2px;
+  }
+}
+
+/* 抽獎禮品加上 AOS 後，AOS 的 opacity 規則權重較高，會蓋掉原本的 hover 變淡效果；這裡補回 */
+.bigGift2[data-aos].aos-animate:hover{
+  opacity: 0.7;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
 }

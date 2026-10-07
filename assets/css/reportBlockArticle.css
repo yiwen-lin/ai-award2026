@@ -34,7 +34,7 @@
   margin: 0 auto;
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: stretch; /* RWD: 同一排卡片等高，READ MORE 對齊 */
   justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 20px;
@@ -46,14 +46,20 @@
 
 .p {
   width: 430px;
+  display: flex; /* RWD: 讓 READ MORE 固定在卡片底部 */
+  flex-direction: column;
 }
 
 .demoCon {
   width: 100%;
   overflow: hidden;
+  aspect-ratio: 16 / 9; /* RWD: 縮圖比例統一，圖片載入前也不跳版 */
 }
 
 .p .demoCon > img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
   width: 102%;
   position: relative;
   left: -2%;
@@ -74,11 +80,15 @@
 .aTitle {
   font-weight: 500;
   font-size: 24px;
+  margin-top: 16px; /* RWD: 標題與縮圖之間留白（原本貼齊圖片） */
   margin-bottom: 12px;
-  font-family: "Noto Sans TC";
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; /* RWD: 補字型備援，避免退回新細明體 */
+  line-height: 1.5;
 }
 
 .readMore {
+  margin-top: auto; /* RWD: 推到卡片底部 */
+  align-self: flex-start;
   display: inline-flex;
   overflow: hidden;
   position: relative;
@@ -221,19 +231,37 @@
 
 @media only screen and (max-width: 1370px) {
   .p {
-    width: calc(33% - 10px);
+    width: calc((100% - 40px) / 3); /* RWD: 精準扣掉 2 個 20px 間距 */
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .p {
-    width: calc(50% - 10px);
+    width: calc((100% - 20px) / 2);
+  }
+
+  .aTitle {
+    font-size: 20px;
   }
 }
 
 @media only screen and (max-width: 599px) {
+  .reportBlockArticle {
+    row-gap: 32px;
+  }
+
   .p {
     width: 100%;
+  }
+
+  .aTitle {
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+
+  .other {
+    margin-top: 16px;
   }
 
   .p .demoCon > img {
